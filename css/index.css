@@ -1,0 +1,252 @@
+/*头部开始*/
+.header{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.header>.header-top{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    line-height: 40px;
+    padding: 0 48px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.header-top>ul{
+    list-style: none;
+}
+.header-top>ul>li{
+    float: left;
+    margin-right: 42px;
+    color: #ccc;
+}
+.header-top>ul>li:last-child{
+    margin-right:0;
+}
+.header-top>ul>li>a{
+    font-size: 14px;
+    color:#ccc;
+    font-weight: 400;
+}
+.header-top>ul>li:hover a{
+    color:#666;
+}
+.header>.header-bottom{
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header>.header-bottom>.logo>a{
+    font-size: 100px;
+    color:#fff;
+}
+.header>.header-bottom>.logo:hover a{
+    color: #417fff;
+}
+.header-bottom>.header-middle{
+    list-style: none;
+}
+.header-bottom>.header-middle>li{
+    float: left;
+    margin: 0 28px;
+}
+.header-bottom>.header-middle>li:hover a{
+    color: #415fff;
+}
+.header-bottom>.header-middle>li>a{
+    font-size: 16px;
+    color: #000;
+}
+.header-bottom>.search>a{
+    color: #ccc;
+    font-size: 30px;
+}
+/*头部结束*/
+/*中部开始*/
+
+.main{
+    width: 100%;
+    margin-top: 40px;
+}
+.main>.main-top{
+    width: 100%;
+    position: relative;
+}
+.main>.main-top img{
+    vertical-align: bottom;
+    width: 100%;
+}
+.main>.main-top>ol{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+.main>.main-top>ol>li{
+    float: left;
+    width: 40px;
+    height: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 4px;
+}
+.main>.main-top>div{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+.main>.main-top>div>i{
+    display: block;
+    width: 304px;
+    height: 45px;
+    background: url("./../images/vivo-banner-title1.png") no-repeat;
+}
+.main>.main-top>div>i:nth-child(2){
+    background: url("./../images/vivo-banner-title2.png") no-repeat;
+}
+.main>.main-top>div>i:nth-child(3){
+    background: url("./../images/vivo-banner-title3.png") no-repeat;
+}
+.main>.main-top>div p{
+    width: 304px;
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    margin-top: 60px;
+}
+.main>.main-top>div span{
+    display: block;
+}
+.main>.main-top>div b{
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background:rgba(255,255,255,0.5);
+    transition: all 0.5s;
+}
+.main>.main-top>div p:hover{
+    color:#fff;
+}
+.main>.main-top>div p:hover b{
+    width: 70px;
+    background: #fff;
+}
+.main>.main-bottom{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.main>.main-bottom>div{
+    flex:1;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+.main>.main-bottom>div img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main>.main-bottom .bottom-title{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 888;
+    color: #333;
+}
+.main>.main-bottom>div:nth-child(even) .bottom-title{
+    color: #fff;
+}
+.main>.main-bottom .bottom-title h2{
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main>.main-bottom .bottom-title p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+/*中部结束*/
+/*底部开始*/
+.footer{
+    width: 100%;
+    background: #f7f7f7;
+    padding-top: 60px;
+}
+.footer>.footer-in{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer>.footer-in>.footer-top{
+    padding-bottom: 76px;
+    border-bottom: 1px solid #333;
+}
+.footer>.footer-in>.footer-top>.top-left{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-in>.footer-top>.top-left dt{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    margin-bottom: 40px;
+}
+.footer-in>.footer-top>.top-left dd{
+    font-size: 14px;
+    line-height: 17px;
+    color: #666;
+    margin-bottom: 18px;
+}
+.footer>.footer-in>.footer-top>.top-right{
+    width: 25%;
+    text-align: center;
+}
+.footer-in>.footer-top>.top-right p:nth-child(1) a{
+    color: #333;
+    font-size: 22px;
+}
+.footer-in>.footer-top>.top-right p:nth-child(2){
+    margin-top: 60px;
+    font-size: 24px;
+    color: #415FFF;
+}
+.footer-in>.footer-top>.top-right p:nth-child(3){
+    font-size: 14px;
+    color: #333;
+}
+.footer-in>.footer-bottom{
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+.footer-in>.footer-bottom a{
+    color: #666;
+}
+.footer-in>.footer-bottom>.bottom-right a{
+    font-size: 12px;
+}
+.footer-in>.footer-bottom>.bottom-right a:first-child{
+    margin-right: 60px;
+}
+/*底部结束*/
+/*响应式网页兼容开始*/
+.nav2{
+    display: none;
+}
+.header-phone{
+    display: none;
+}
+.main>.main-top li:nth-child(2){
+    display: none;
+}
+/*响应式网页兼容结束*/
